@@ -1,0 +1,121 @@
+@media only screen and (max-width: 768px){
+ /* Section 1 */
+ .section-1{
+  background-image: url(./assets/Profile/AFCFDF76-268A-44AB-B380-8EF32CA8554E.jpeg);
+  background-repeat: no-repeat;
+  /* background-size: 160%; */
+  background-size: 160vw;
+  background-position: -34vw 8vh;
+  height: 91vh;
+ }
+ .section-1 .col-md-7{
+  width: 100%;
+  margin-top: -1rem;
+  height: 91vh;
+  background-color:rgba(0, 0, 0, 0.64) ;
+  padding: 7vmin;
+ }
+ .section-1 .col-md-7 h1{
+  padding-top: 24.8vh;
+  font-size: 5vmax;
+ }
+ .section-1 .col-md-7 p{
+  font-size: 1.8vh;
+  margin-top: -0.3rem;
+  line-height: 3.3vmax;
+  margin-bottom: 2.3vmax;
+ }
+ .section-1 .col-md-5{
+  display: none;
+  margin: 0;
+  padding: 0;
+ }
+ /* Section 2 */
+ .section-2{
+  padding: 5.5vmin;
+ }
+ .section-2 h2{
+  padding-top: 12rem;
+ }
+ .section-2 .col-md p{
+  font-size: 0.86rem;
+ }
+ /* Section 4 */
+ .section-4 .live-tag h2{
+  font-size: 2.4vmax;
+  padding: 0;
+  margin-left: 6vmax;
+ }
+ .section-4 .live-tag{
+  width: 17.3vmax;
+ }
+ .section-4 #live-text{
+  padding-bottom: 2rem;
+ }
+ .section-4 .live-pic{
+  width: 110%;
+  margin-top: -0.3rem;
+  margin-left: -0.8rem;
+ }
+ .section-4 #live-text h3{
+  font-size: 1.3rem;
+  margin-bottom: -1vmin;
+ }
+ .section-4 #live-text h4{
+  font-size: 1rem;
+  margin-bottom: -0.6rem;
+ }
+ .section-4 #live-text p{
+  font-size: 0.7rem;
+  margin-bottom: -0.1rem;
+ }
+ /* Section 5 */
+ .section-5 .recording-tag{
+  width: 16.8vmax;
+  margin-top: -3rem;
+  padding: 0;
+ }
+ .section-5 .recording-tag h2{
+  font-size: 2.3vmax;
+  margin-left: 2vmin;
+  margin-top: 0.1rem;
+  padding: 0;
+ }
+ /* Section 6 */
+ .sc6-1 h2{
+  font-size: 1.2rem;
+ }
+  #recording-text #text{
+   font-size: 0.8rem;
+  }
+ #recording-text .col-md-12 p{
+  font-size: 1rem;
+ }
+ #recording-track h2{
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+ }
+ #recording-track h5{
+  margin-top: 0.1rem;
+  font-size: 1rem;
+ }
+ .facebook-track iframe{
+  height: 36rem;
+ }
+ /* Footer */
+ footer h3{
+  font-size: 1.2rem;
+ }
+ footer p{
+  font-size: 0.8rem;
+ }
+ .col-md-7{
+  margin-bottom: 0.5rem;
+ }
+ .icons i{
+  font-size: 0.75rem;
+ }
+ .icons a{
+  margin-right: 0.9rem;
+ }
+}

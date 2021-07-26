@@ -1,0 +1,420 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Merriweather:wght@300;400;700&family=Patua+One&family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+} 
+body{
+ overflow-x: hidden;
+}
+body::before{
+ content: '';
+ display: block;
+ height: 7vmin;
+ background-color: var(--light-black);
+}
+:root{
+ --Merriweather:"Merriweather",cursive;
+ --Patua-One:"Patua-One",cursive;
+ --Rubik:"Rubik",cursive;
+ --Open-sans:"Open-Sans",cursive;
+ --Roboto:"Roboto",cursive;
+ --light-black: rgba(0,2,5.5,0.98);
+ --brand-color: #ffbe0b;
+ --Montserrat: "Montserrat",cursive;
+}
+ /* Scrollbar  */
+::-webkit-scrollbar{
+ width: 1.9vh;
+ background: #16161d;
+}
+::-webkit-scrollbar-thumb{
+ border-radius: 20px;
+
+ background-color: #5b6467;
+background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+::-webkit-scrollbar-thumb:hover{
+background:  #343434;
+}
+/* Menu icon */
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: var(--brand-color);
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/* Navbar */
+.band-logo{
+ width: 7.6vmin;
+ margin-left: 1vmin;
+}
+.navbar-brand{
+ font-family: var(--Merriweather);
+ font-size: 1.8vmax;
+ color: var(--brand-color);
+ text-decoration: none;
+ margin-left: 2vh;
+}
+nav{
+ background: black;
+ /* position: relative; */
+ height: 8.6vh;
+}
+.nav-item{
+ margin-right: 3em;
+ padding: 1vmin;
+}
+.nav-item a{
+ font-family: var(--Patua-One);
+ font-size: 2.3vmin;
+ letter-spacing: 0.08em;
+}
+
+.dropdown-item{
+ position: absolute;
+ display: none;
+ background: white;
+ min-width: 160px;
+ z-index: 1;
+ box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+.dropdown-item a{
+ display: block;
+ padding: 12px 16px;
+ color: black;
+ text-decoration: none;
+}
+.dropdown-item a:hover{
+ background: whitesmoke;
+}
+.dropdown:hover .dropdown-item{
+ display: block;
+}
+/* Section 1 */
+.section-1{
+ background: var(--light-black);
+ height: 92vh;
+ color: #e2c9be;
+ /* padding-top: 9vmin; */
+}
+.section-1 .col-md-7{
+ margin-top: 30vmin;
+ height: 80vmin;
+}
+.section-1 h1{
+ font-family: var(--Roboto);
+ font-size: 4.8vmax;
+ font-weight: bold;
+ letter-spacing: 1.2vmin;
+ padding-top: 10vmin;
+}
+.section-1 p{
+ font-family: var(--Rubik);
+ font-weight: lighter; 
+ font-size: 1.6vmax;
+ margin-top: 1vmax;
+ margin-bottom: 2vmax;
+ line-height: 3vmax;
+}
+.section-1 a{
+ font-family: var(--Rubik);
+ color: #e2c9be;
+ padding: 0.4vmax 6vmax 0.5vmax 6vmax;
+ border-radius: 15px;
+ text-decoration: none;
+ font-size: 2vmax;
+}
+.section-1 .col-md-5{
+ background: url(./assets/Profile/AFCFDF76-268A-44AB-B380-8EF32CA8554E.jpeg);
+ background-size: 45vw;
+ background-repeat: no-repeat;
+ background-position: -5vmin -1vmin;
+ opacity: 0.55;
+ margin-top: 4vmin;
+}
+/* .section-1 img{
+ padding-top: 20vmin;
+} */
+
+/* Section 2 */
+.section-2{
+background-color: #e2c9be;
+background-image: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+padding: 12vmin;
+}
+.section-2 h2{
+ margin-top: -3vmin;
+ font-family: var(--Roboto);
+ font-size: 3.53vmax;
+ color: var(--light-black);
+ word-spacing: 0.1em;
+ padding-top: 15vmin;
+}
+.section-2 p{
+ font-family: var(--Rubik);
+ font-size: 1.35vmax;
+}
+.sc2-img img{
+ width: 80%;
+ height: 97%;
+ opacity: 0.93;
+ border-radius: 7px;
+ box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Section 3 */
+
+.cover{
+ background-image: url(./assets/Profile/IMG_1775.jpeg);
+ background-repeat: no-repeat;
+ width: 100%;
+ height: 14vw;
+ background-position: 0vw -30vw;
+ background-size: 100%;
+ position: relative;
+}
+.overlay{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+}
+.cover .content{
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.45);
+ padding-top: 4.6vw;
+ padding-right: 1vw;
+ color: white;
+ letter-spacing: 1.09vmax;
+}
+.cover .content h1{
+ font-family: var(--Rubik);
+ font-size: 5vmin;
+}
+/* Section 4 */
+.section-4{
+background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+ background-attachment: fixed;
+ padding: 3vmin;
+}
+.live-tag{
+ -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+ box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.9);
+ position: absolute;
+ width: 17vmax;
+ margin-left: -3.7vmin;
+ margin-top: -2.8vmin;
+ background: whitesmoke;
+ border-radius: 6px;
+}
+.live-tag h2{
+ padding: 1vmin;
+ font-family: var(--Montserrat);
+ font-weight: 500;
+ color: var(--light-black);
+ font-size: 2vmax;
+ padding: 0;
+ margin-left: 6vw;
+}
+.section-4 .container{
+ height: 2900px;
+ padding-top: 3vw;
+}
+.live-pic{
+ width: 99%;
+ height: 96.5%;
+ border-radius: 4px;
+}
+#live-content{
+ margin-bottom: 12vw;
+ margin-top: 7vw;
+ padding: 5vmin;
+}
+#live-content h3{
+ font-family: var(--Roboto);
+ font-weight: bolder;
+ font-size: 5.3vmin;
+}
+#live-content h4{
+ margin-top: 2.8vmin;
+ font-family: var(--Roboto);
+ font-size: 4.5vmin;
+}
+#live-content p{
+ font-family: var(--Rubik);
+ margin-top: 4.5vmin;
+ font-size: 2.8vmin;
+}
+#live-text{
+ background: #212529;
+ color: white;
+ opacity: 0.65;
+ border-radius: 4px;
+ margin-bottom: 2vmin;
+ padding-left: 3vmin;
+}
+/* Section 5 */
+.section-5{
+ background-image: url(./assets/Profile/IMG_1924.jpeg);
+ background-repeat: no-repeat;
+ background-position: 0vw -17.5vw;
+ background-size: 100%;
+ width: 100%;
+ height: 16vw;
+ opacity: 0.84;
+}
+.recording-tag{
+ -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+ box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.55);
+ position: absolute;
+ color: var(--light-black);
+ background: whitesmoke;
+ width: 24vmax;
+ height: 6vmin;
+ margin-left: -3.1em;
+ margin-top: -5.5vmax;
+ border-radius: 6px;
+}
+.recording-tag h2{
+ font-family: var(--Montserrat);
+ font-weight: 500;
+ padding: 1vmin;
+ font-size: 2.1vmax;
+ padding: 0;
+ margin-left: 4vw;
+}
+/* Section 6 */
+.section-6{
+ background-attachment: fixed;
+ background-color: #e2c9be;
+background-image: linear-gradient(315deg, #e2c9be 0%, #fbf7e9 74%);
+
+}
+#recording-text{
+ box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+ background: #ffdab9;
+ background:rgba(0, 0, 0, 0.1);
+ border-radius: 5px;
+}
+#recording-text h2{
+ font-family: var(--Rubik);
+ /* font-size: 5.3vmin; */
+ color: var(--brand-color);
+}
+#recording-text #text{
+ font-family: var(--Open-sans);
+ font-size: 2.7vmin;
+ color: var(--light-black);
+ margin-top: 1em;
+}
+#recording-text img{
+ border-radius: 4px;
+}
+.sc6-1{
+ background: rgba(0, 0, 0, 0.24);
+ margin-top: 1.3vmax;
+ padding-top: 1.3em;
+ padding-bottom: 1.4em;
+ padding-left: 1em;
+ padding-right: 0.5em;
+ border-radius: 4px;
+}
+#recording-text .col-md-12{
+ margin-top: 2.5vmax;
+}
+#recording-text .col-md-12 p{
+ font-size: 3.4vmin;
+ font-weight:lighter;
+}
+#recording-track{
+ box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.35);
+ background: #ffdab9;
+ background:rgba(0, 0, 0, 0.1);
+ border-radius: 5px;
+}
+#recording-track h2{
+ font-family: var(--Rubik);
+ font-size: 3vmax;
+ word-spacing: 0.05vmin;
+ letter-spacing: 0.1em;
+}
+#recording-track h5{
+ font-family: var(--Rubik);
+ font-size: 2.2vmax;
+ padding-left: 0.6vmax;
+}
+.facebook-track h5 a{
+ text-decoration: none;
+}
+.soundcloud-track h5 a{
+ color: #ff5500;
+ text-decoration: none;
+}
+.facebook-track iframe{
+ border-radius: 9px;
+ height: 67vh;
+}
+.soundcloud-track iframe{
+ border-radius: 9px;
+ margin-bottom: -3vmax;
+ height: 15vh;
+}
+/* Section 7 */
+/* Footer */
+footer{
+ background: var(--light-black);
+ padding: 6vmin;
+}
+
+footer h3{
+ font-family: var(--Rubik);
+ margin-bottom: 2vmin;
+ font-size: 4vmin;
+}
+footer p{
+ font-family: var(--Roboto);
+ font-size: 2.8vmin;
+ margin-bottom: 2vmin;
+}
+.icons{
+ display: inline-flex;
+}
+.icons a{
+ margin-right: 3vmin;
+}
+.icons i{
+ color: blanchedalmond;
+ font-size: 3vmin;
+}
+
